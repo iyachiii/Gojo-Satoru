@@ -1913,7 +1913,7 @@ break
                 if (!quoted) return reply(`Reply Image`)
                 if (!/webp/.test(mime)) reply(`منشن على ستيكر واكتب  *${prefix + command}*`)
                 reply(mess.wait)
-                let media = await GojoMdNx.downloadAndSaveMediaMessage(quoted)
+                let media = await (quoted)
                 let ran = await getRandom('.png')
                 exec(`ffmpeg -i ${media} ${ran}`, (err) => {
                     fs.unlinkSync(media)
@@ -2042,7 +2042,7 @@ break
                 })
                 }
                 break
-        case 'image': case 'صورة': {
+        case 'img': case 'صورة': {
         if (!text) return reply(`Example : ${prefix + command} gojo`)
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
@@ -3327,7 +3327,7 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 						GojoMdNx.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
 					})
 					break
-				case 'وايفو': case 'لولي':
+				case '33333333': case '333333333':
 					reply(mess.wait)
 					axios.get(`https://api.waifu.pics/sfw/waifu`)
 					.then(({data}) => {
@@ -3360,11 +3360,11 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `┌─❖
 ┌─❖ مـرحبـاً 🤗 」
 └┬❖ 「 ${pushname} 」
-││✑「مـعـك بـوت غـوجـو 👋🏻」◣
-││✑「مـن مـمـلـكـة غولد 🤗」◣
+││✑「مـعـك بـوت اياشي 👋🏻」◣
+││✑「مـن مـمـلـكـة شادو 🤗」◣
 │└───────────────┈ ⳹
  「 مـعـلـومـات عـن الـبـوت 」
-│✙「 اسـم الـبـوت 」◣ : 「 غوجو ✨🤞🏻 」◣
+│✙「 اسـم الـبـوت 」◣ : 「 اياشي ✨🤞🏻 」◣
 │✙「 رقـم الـمـالـك 」◣ : ${global.owner}
 │✙「عـدد الـمـسـتـخـدمـيـن」◣ : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
@@ -3373,12 +3373,12 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                              hydratedButtons: [{
                                 urlButton: {
                                     displayText: '「 قناتي 」「📍」◣',
-                                    url: `${myweb}`
+                                    url: `${-}`
                                 }
                             }, {
                             	urlButton: {
                                 displayText: '「 رابط الاستقبال 」「📌」◣',
-                                    url: `${sc}`
+                                    url: `${https://chat.whatsapp.com/BQsLEYs6qOcBCBC55LbmKE}`
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3564,7 +3564,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "المملكة",
 								"rows": [
 									{
-										"title": "قائمة استمارات مملكة غولد",
+										"title": "قائمة استمارات مملكة شادو",
 										"description": ".17.",
 										"rowId": `${prefix}anon`
 									}
@@ -3574,7 +3574,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "نبذة",
 								"rows": [
 									{
-										"title": "تاريخ مملكة غولد",
+										"title": "تاريخ مملكة شادو",
 										"description": ".18.",
 										"rowId": `${prefix}tqtt`
 									}
@@ -3591,7 +3591,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `` }, { quoted: m })
             }
             break
-            case 'التسجhgjيل': case 'التسجيل': {
+            case 'التسجhgjيل': case '------': {
                 reply(`「 الفرع الخاص ل التعليم على البوت 」◣
 
 「 _https://chat.whatsapp.com/CKLmAGJo3iw5AvNM1KZee3_ 」◣
@@ -3860,7 +3860,6 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╔═✪「 القائمة 」
 ┃╠الاوامر
 ┃╠المالك
-┃╠التسجيل
 ┃╚═════════════✪
 ┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
@@ -3878,7 +3877,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠ترقية 
 ┃╠تخفيض
 ┃╠طرد
-┃╠الجروب
+┃╠القروب
 ┃╠التعديل
 ┃╚═════════════✪
 ┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
