@@ -25,24 +25,24 @@ global.ownernomer = '966568322347'
 global.ownername = '♛ الامبراطور اياتو ♛'
 global.botname = '♛ غوجو بوت ♛'
 global.footer = ' غوجو بوت ♛'
-global.ig = 'https://github.com/nexusNw'
+global.ig = 'w'
 global.region = 'India, South India, Kerala'
-global.sc = 'https://chat.whatsapp.com/CKLmAGJo3iw5AvNM1KZee3'
+global.sc = 'https://chat.whatsapp.com/BQsLEYs6qOcBCBC55LbmKE'
 global.myweb = 'https://youtube.com/channel/UCPvrnWknQrgCSIeobXMP0Uw'
-global.packname = 'https://Wa.Me/+96891103640'
-global.author = '[ غـوجـو ]'
+global.packname = 'https://Wa.Me/+966568322347'
+global.author = '[ ايتاشي ]'
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     success: '✓',
-    admin: '*「 هـذا الامـر فـقـط لـ المـشـرفـيـن 」◣*',
-    botAdmin: '*「 اعـطـنـي إشـراف لـتـفـعـيـل  الامـر 」◣*',
-    owner: '*「 هـذا الامـر فـقـط لـ الـمـالـك 」◣*',
-    group: '*「 هـذا الامـر فـي الـمـجـمـوعـات فـقـط 」◣*',
-    private: '*「 هـذا الامـر فـي الـخـاص فـقـط 」◣*',
-    bot: '*「 هـذا الامـر مـخـصـص لـ الـبـوت 」◣*',
-    wait: '*「 انـتـظـر مـن فـضـلـك 」◣*',
+    admin: '*الامر للمشرفين لا تسوي خوي*',
+    botAdmin: '*جب اشراف واسوي لك *',
+    owner: '*الامر خاص بأبو قحط *',
+    group: '*الامر ذا بالقروبات بس*', 
+    private: '*الامر بالخاص بس *',
+    bot: '*هذا الامر لي لحالي بس*',
+    wait: '*اصبر دقيقه*',
     error: 'Error! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 1000 Hours',
 }
