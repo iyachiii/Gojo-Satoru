@@ -608,7 +608,7 @@ if (q.includes('--help')) return reply(examkosong)
  break
  case 'leaderboard':
 {      
-   let txt = `「 *LEADERBOARD* 」\n\n`
+   let txt = `「 *-المتصدرين* 」\n\n`
      for (let i of _buruan){
      txt += `➸ *ID :* ${i.id}\n`
      txt += `*🐟Fish* : ${i.ikan}\n`
@@ -850,12 +850,12 @@ if (q.includes('--help')) return reply(examkosong)
    }
  setTimeout( () => {
   let teksehmazeh = `_[ HUNT RESULT ]_\n`
-     teksehmazeh += `*🐟Fish* : ${ikanmu}\n`
-     teksehmazeh += `*🐔Chicken* : ${ayam}\n`
-     teksehmazeh += `*🐇Rabbit* : ${kelinci}\n`
-     teksehmazeh += `*🐑Sheep* : ${domba}\n`
-     teksehmazeh += `*🐄Cow* : ${sapi}\n`
-     teksehmazeh += `*🐘Elephant* : ${gajah}\n\n`
+     teksehmazeh += `*🐟السمك* : ${ikanmu}\n`
+     teksehmazeh += `*🐔الدجاج* : ${ayam}\n`
+     teksehmazeh += `*🐇الارانب* : ${kelinci}\n`
+     teksehmazeh += `*🐑الغنم* : ${domba}\n`
+     teksehmazeh += `*🐄البقر* : ${sapi}\n`
+     teksehmazeh += `*🐘الفيل* : ${gajah}\n\n`
      teksehmazeh += `_[ INFO ]_\n`
      teksehmazeh += `*Location* : ${lokasinya}\n`
      teksehmazeh += `*Wounded* : ${lukanya}, blood - 10\n`
@@ -864,11 +864,11 @@ if (q.includes('--help')) return reply(examkosong)
       {
        buttonId: `${prefix + command}`, 
        buttonText: {
-        displayText: 'Hunt Again️🏹'
+        displayText: 'اطرحه مره ثانيه️🏹'
       }, type: 1},
     ]
     let buttonMessage = {
-      image: { url: image },
+      img: { url: image },
       caption: teksehmazeh,
       footer: pushname,
       buttons: buttons,
@@ -1146,7 +1146,7 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
                 }
             }
             break
-            case 'زوجني': {
+            case '===': {
             if (!m.isGroup) return replay(`${mess.group}`)
             let member = participants.map(u => u.id)
             let me = m.sender
@@ -1157,12 +1157,12 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
 「اضغط اقبل اذا موافق 😂🤡」◣`
             let ments = [me, jodoh]
             let buttons = [
-                        { buttonId: '「اقبل🤗」◣', buttonText: { displayText: '「اقبل🤗」◣' }, type: 1 }
+                        { buttonId: '「====🤗」◣', buttonText: { displayText: '「=====🤗」◣' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: ments})
             }
             break
-            case 'زواج': {
+            case '----': {
             if (!m.isGroup) return replay(`${mess.group}`)
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
@@ -1291,7 +1291,7 @@ GojoMdNx.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `「 اكبر *${command}* في الجروب هو @${jodoh.split('@')[0]} 」◣
+            let jawab = `「 اكبر *${command}* في القروب هو @${jodoh.split('@')[0]} 」◣
 	    「 صح؟ 🥲 」◣`
             let ments = [me, jodoh]
             let buttons = [
@@ -1348,9 +1348,9 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 await GojoMdNx.groupLeave(m.chat).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
             break
-            case 'تغيير.حقوق': {
+            case 'st': {
                if (!isCreator) return replay(`${mess.owner}`)
-               if (!text) return replay(`Example : ${prefix + command} اسم الحزمة|صاحب الحزمة`)
+               if (!text) return replay(`Example : ${prefix + command} اسم الحزمة`)
           global.packname = text.split("|")[0]
           global.author = text.split("|")[1]
           reply(`Exif Has Been Successfully Changed to\n\n🐦 Packname : ${global.packname}\n🐦 Author : ${global.author}`)
@@ -1443,9 +1443,9 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!isAdmins) return replay(`${mess.admin}`)
 let teks = `「المنشن الجماعي」◣
  
- ➲ *${q ? q : 'اصحو من النوم'}*\n\n`
+ ➲ *${q ? q : '  '}*\n\n`
                 for (let mem of participants) {
-                teks += `👤 @${mem.id.split('@')[0]}\n`
+                teks += `👤 @${mem.id.split('')[0]}\n`
                 }
                 GojoMdNx.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
